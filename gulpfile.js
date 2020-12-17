@@ -104,7 +104,6 @@ gulp.task( 'browsersync', function () {
 	browserSync.init( files, {
 		// Replace with URL of your local site
 		proxy: "http://advancedtheraputic.local",
-		proxy: "http://dawndamico.advancedtheraputic.local",
 	} );
 
 	gulp.watch( './assets/scss/**/*.scss', ['styles'] );
