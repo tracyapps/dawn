@@ -1,7 +1,5 @@
-# Start
-
-Starter theme for [tapps](http://tapps.design) to use (and I suppose others can use it too at some point).
-
+# Dawn
+###### made from Start
 
 ### What is start?
 The start is a blank WordPress theme fully equipped with ACF site options & page sections to make things easy.
