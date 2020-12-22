@@ -13,7 +13,7 @@ CSS file.
 * v1.4.0
 * Docs at http://davidtheclark.github.io/scut
 */
-@import url("https://fonts.googleapis.com/css?family=Quattrocento:400,700|Work+Sans:200,500,800");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@300;700&family=Dancing+Script:wght@700&display=swap");
 .assistive-text,
 .visuallyhidden,
 .screen-reader-text {
@@ -46,11 +46,11 @@ html {
   box-sizing: border-box; }
 
 body {
-  font-size: 22px;
+  font-size: 23px;
   margin: 0;
   background-color: #F2F2F2;
-  color: #414141;
-  font-family: "Quattrocento", serif;
+  color: #292929;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 300;
   max-width: 100vw;
@@ -63,7 +63,7 @@ body {
   flex-direction: column; }
   @media (max-width: 600px) {
     body {
-      font-size: calc( 22px / 1.3);
+      font-size: calc( 23px / 1.3);
       line-height: 1.2; } }
 
 .highlight,
@@ -75,9 +75,10 @@ div.site-content {
   flex: 1; }
 
 a {
-  color: #7A7CBD; }
+  color: #428897;
+  transition: all 200ms ease-in-out; }
   a:hover, a:focus, a:active {
-    color: #564d95; }
+    color: #6057a5; }
 
 blockquote {
   position: relative;
@@ -104,7 +105,7 @@ blockquote {
   color: #fff; }
   .inverse a,
   .inverse a:visited {
-    color: #B3DFD8; }
+    color: #90e0f0; }
     .inverse a:hover, .inverse a:focus, .inverse a:active,
     .inverse a:visited:hover,
     .inverse a:visited:focus,
@@ -116,38 +117,64 @@ blockquote {
   .inverse svg {
     fill: #fff !important; }
 
+.wp-block-button__link,
 .button,
 input[type="submit"],
 button {
-  background: rgba(179, 223, 216, 0.9);
-  padding: 1rem 2rem;
+  background: #f44a83;
+  padding: 1.25rem 4rem;
   text-align: center;
   text-decoration: none;
-  color: #414141 !important;
-  border-radius: 4px;
+  color: #fff !important;
+  border-radius: 3em;
   display: inline-block;
-  border: 1px solid #6bc1b3;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.43);
-  box-shadow: 0 0 3px rgba(179, 223, 216, 0.5);
-  transition: all 400ms ease-in-out;
-  text-shadow: none;
+  border: 1px solid #f11a62;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 2px rgba(156, 9, 58, 0.75);
+  transition: all 200ms ease-in-out;
   font-weight: bold;
-  border: none;
   outline: none; }
-  .button:hover, .button:focus, .button:visited:hover,
+  .wp-block-button__link:hover, .wp-block-button__link:focus, .wp-block-button__link:visited:hover,
+  .button:hover,
+  .button:focus,
+  .button:visited:hover,
   input[type="submit"]:hover,
   input[type="submit"]:focus,
   input[type="submit"]:visited:hover,
   button:hover,
   button:focus,
   button:visited:hover {
-    background: transparent;
-    color: #414141 !important; }
+    background: #483d31;
+    border: 1px solid #2a231c;
+    color: #faec75 !important;
+    text-shadow: -1px -1px 0 rgba(5, 19, 138, 0.5);
+    box-shadow: 0 0 9px rgba(42, 35, 28, 0.55); }
+  .wp-block-button__link.full,
   .button.full,
   input[type="submit"].full,
   button.full {
     display: block;
     text-align: center; }
+  .is-style-outline .wp-block-button__link, .is-style-outline
+  .button, .is-style-outline
+  input[type="submit"], .is-style-outline
+  button {
+    color: #f44a83 !important;
+    text-shadow: none;
+    border: 2px solid rgba(244, 74, 131, 0.6); }
+    .is-style-outline .wp-block-button__link:hover, .is-style-outline .wp-block-button__link:focus, .is-style-outline .wp-block-button__link:visited:hover, .is-style-outline
+    .button:hover, .is-style-outline
+    .button:focus, .is-style-outline
+    .button:visited:hover, .is-style-outline
+    input[type="submit"]:hover, .is-style-outline
+    input[type="submit"]:focus, .is-style-outline
+    input[type="submit"]:visited:hover, .is-style-outline
+    button:hover, .is-style-outline
+    button:focus, .is-style-outline
+    button:visited:hover {
+      color: #f0105b !important;
+      box-shadow: 0 0 12px rgba(244, 74, 131, 0.95);
+      border-color: #f11a62; }
 
 .learn-more-button {
   padding-bottom: 2rem; }
@@ -159,7 +186,7 @@ button {
   text-align: center; }
 
 a.no-style {
-  color: #414141;
+  color: #292929;
   text-decoration: none; }
 
 h1,
@@ -167,65 +194,74 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 300;
   text-transform: capitalize;
-  margin-bottom: 0.3em; }
+  margin-bottom: 0.3em;
+  line-height: 1.1; }
 
 h1 {
-  font-size: 55px; }
+  font-size: 63.25px;
+  font-family: "Bree Serif", serif; }
   @media (max-width: 600px) {
     h1 {
-      font-size: calc( 55px / 1.3); } }
+      font-size: calc( 63.25px / 1.3); } }
 
 h2 {
-  font-size: 48.4px; }
+  font-size: 63.25px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
   @media (max-width: 600px) {
     h2 {
-      font-size: calc( 48.4px / 1.3); } }
+      font-size: calc( 63.25px / 1.3); } }
 
 h3 {
-  font-size: 44px; }
+  font-size: 50.6px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700; }
   @media (max-width: 600px) {
     h3 {
-      font-size: calc( 44px / 1.3); } }
+      font-size: calc( 50.6px / 1.3); } }
 
 h4 {
-  font-size: 33px; }
+  font-size: 41.4px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700; }
   @media (max-width: 600px) {
     h4 {
-      font-size: calc( 33px / 1.3); } }
+      font-size: calc( 41.4px / 1.3); } }
 
 h5 {
-  font-size: 28.6px; }
+  font-size: 34.5px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700; }
   @media (max-width: 600px) {
     h5 {
-      font-size: calc( 28.6px / 1.3); } }
+      font-size: calc( 34.5px / 1.3); } }
 
 h6 {
-  font-size: 24.2px;
+  font-size: 27.6px;
+  font-family: "Dancing Script", cursive;
   margin: 1em 0 0 0; }
   @media (max-width: 600px) {
     h6 {
-      font-size: calc( 24.2px / 1.3); } }
+      font-size: calc( 27.6px / 1.3); } }
 
 .plain-bg {
   background: #F2F2F2;
-  color: #414141;
+  color: #292929;
   text-shadow: none; }
   .plain-bg a,
   .plain-bg a:visited {
-    color: #7A7CBD; }
+    color: #428897; }
     .plain-bg a:hover, .plain-bg a:focus, .plain-bg a:active,
     .plain-bg a:visited:hover,
     .plain-bg a:visited:focus,
     .plain-bg a:visited:active {
-      color: #564d95; }
+      color: #6057a5; }
     .plain-bg a.button:hover,
     .plain-bg a:visited.button:hover {
-      color: #414141 !important; }
+      color: #292929 !important; }
   .plain-bg svg {
-    fill: #414141 !important; }
+    fill: #292929 !important; }
 
 .container {
   width: 90%;
@@ -263,7 +299,7 @@ img {
 
 div.wp-caption {
   background: #F2F2F2;
-  border: 1px solid rgba(65, 65, 65, 0.5);
+  border: 1px solid rgba(72, 61, 49, 0.5);
   border-radius: 0 0 0 20px;
   max-width: calc( 100% - 2px); }
   div.wp-caption.alignright {
@@ -326,11 +362,11 @@ select,
 textarea {
   padding: 0.5rem 1rem;
   outline: none;
-  border: 1px solid rgba(65, 65, 65, 0.2);
+  border: 1px solid rgba(41, 41, 41, 0.2);
   border-radius: 3px;
   background: #F2F2F2;
-  font-size: 22px;
-  font-family: "Work Sans", sans-serif;
+  font-size: 23px;
+  font-family: "Open Sans", sans-serif;
   margin-left: 1rem;
   box-shadow: none;
   -webkit-appearance: none; }
@@ -348,7 +384,7 @@ textarea {
   input[type="datetime-local"]:hover,
   select:hover,
   textarea:hover {
-    border: 1px solid #F27143; }
+    border: 1px solid #428897; }
   input[type="email"]:focus,
   input[type="number"]:focus,
   input[type="password"]:focus,
@@ -364,12 +400,12 @@ textarea {
   select:focus,
   textarea:focus {
     outline: none;
-    border: 1px dotted #414141;
+    border: 1px dotted #483d31;
     background: #F2F2F2; }
 
 input[type="submit"] {
-  font-size: 22px;
-  font-family: "Work Sans", sans-serif; }
+  font-size: 23px;
+  font-family: "Open Sans", sans-serif; }
 
 .frm_form_field.frm_left_container input:not([type=radio]):not([type=checkbox]), .frm_form_field.frm_left_container:not(.frm_dynamic_select_container) select, .frm_form_field.frm_left_container textarea, .frm_form_field.frm_left_container .wp-editor-wrap, .frm_form_field.frm_left_container .frm_opt_container, .frm_form_field.frm_left_container .frm_dropzone, .frm_form_field.frm_left_container .frm-g-recaptcha, .frm_form_field.frm_left_container .g-recaptcha, .frm_form_field.frm_left_container .chosen-container, .frm_form_field.frm_left_container .frm_combo_inputs_container, .frm_form_field.frm_right_container input:not([type=radio]):not([type=checkbox]), .frm_form_field.frm_right_container:not(.frm_dynamic_select_container) select, .frm_form_field.frm_right_container textarea, .frm_form_field.frm_right_container .wp-editor-wrap, .frm_form_field.frm_right_container .frm_opt_container, .frm_form_field.frm_right_container .frm_dropzone, .frm_form_field.frm_right_container .frm-g-recaptcha, .frm_form_field.frm_right_container .g-recaptcha, .frm_form_field.frm_right_container .chosen-container, .frm_form_field.frm_right_container .frm_combo_inputs_container {
   max-width: 100%; }
@@ -394,7 +430,7 @@ input[type="submit"] {
   margin: 0 0 0 -5px; }
 
 .site-header {
-  background: rgba(255, 255, 255, 0.5); }
+  background: #faec75; }
   .site-header .main-navigation {
     text-transform: uppercase; }
     .site-header .main-navigation .mobile-menu-toggle {
@@ -406,13 +442,13 @@ input[type="submit"] {
       display: flex;
       -ms-flex-align: center;
       align-items: center;
-      transition: all 400ms ease-in-out; }
+      transition: all 200ms ease-in-out; }
       .site-header .main-navigation ul li {
         list-style-type: none;
         -ms-flex: 1;
         flex: 1; }
         .site-header .main-navigation ul li a {
-          transition: all 400ms ease-in-out; }
+          transition: all 200ms ease-in-out; }
     @media (max-width: 900px) {
       .site-header .main-navigation .mobile-menu-toggle {
         display: block; }
@@ -443,17 +479,17 @@ input[type="submit"] {
 
 @media (min-width: 900px) {
   .home .site-header .main-navigation ul {
-    background-color: rgba(255, 255, 255, 0); } }
+    background-color: rgba(250, 236, 117, 0); } }
 
 #main {
   width: 100%; }
 
 footer.site-footer {
-  background: #496C85;
+  background: #483d31;
   padding: 2rem 0;
   color: #F2F2F2; }
   footer.site-footer a {
-    color: #B3DFD8; }
+    color: #90e0f0; }
     footer.site-footer a:hover {
       color: #F2F2F2; }
   footer.site-footer .footer-widget-area {
@@ -612,7 +648,7 @@ footer.site-footer {
   .block-hero.text-light {
     color: #fff; }
   .block-hero.text-dark {
-    color: #414141; }
+    color: #292929; }
   .block-hero.text-right .hero-content {
     -ms-flex-pack: end;
     justify-content: flex-end; }
@@ -683,7 +719,7 @@ footer.site-footer {
     display: block;
     clear: both;
     letter-spacing: 0;
-    font-family: "Work Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: normal;
     margin-bottom: -3rem; }
 
@@ -714,10 +750,10 @@ footer.site-footer {
       margin: 0;
       line-height: 1.2; }
       .page-children-grid .child-page-box h6 a {
-        color: #414141;
+        color: #292929;
         text-decoration: none; }
         .page-children-grid .child-page-box h6 a:hover {
-          color: #564d95; }
+          color: #6057a5; }
     .page-children-grid .child-page-box .child-page-link {
       width: 15vw;
       height: 15vw;
@@ -744,8 +780,8 @@ header.article-header .byline {
 #respond h3 {
   font-size: 3rem; }
   #respond h3 small {
-    font-size: 22px;
-    font-family: "Work Sans", sans-serif;
+    font-size: 23px;
+    font-family: "Open Sans", sans-serif;
     font-weight: normal; }
 
 ol.commentlist {
@@ -761,7 +797,7 @@ ol.commentlist {
       display: flex; }
       ol.commentlist li .media-object .media-object-section > article {
         padding: 0.5em 1em;
-        background: rgba(65, 65, 65, 0.065);
+        background: rgba(72, 61, 49, 0.065);
         border-radius: 0 0 0 20px; }
       ol.commentlist li .media-object .media-object-section p {
         padding: 0; }
@@ -800,8 +836,8 @@ span.pulled-right {
   font-size: 1.5em;
   line-height: 1.3;
   text-align: right;
-  color: #5b5b5b;
-  border-left: 3px solid rgba(242, 113, 67, 0.5); }
+  color: #434343;
+  border-left: 3px solid rgba(66, 136, 151, 0.5); }
   @media (max-width: 900px) {
     span.pulled-right {
       width: 200px;
@@ -817,8 +853,8 @@ span.pulled-left {
   font-size: 1.5em;
   line-height: 1.3;
   text-align: left;
-  color: #5b5b5b;
-  border-right: 3px solid rgba(242, 113, 67, 0.5); }
+  color: #434343;
+  border-right: 3px solid rgba(66, 136, 151, 0.5); }
   @media (max-width: 900px) {
     span.pulled-left {
       width: 200px;

@@ -35,23 +35,26 @@
 		$text-hover: $button-text-color-hover,
 		$transition-speed: $button-transition-speed,
 		$padding: $default-button-padding ) {
-	background: transparentize( $color, 0.1 );
+	background: $color;
 	padding: $padding;
 	text-align: center;
 	text-decoration: none;
 	color: $text !important;
 	border-radius: $border-radius;
 	display: inline-block;
-	border: 1px solid darken( $color, 20 );
-	text-shadow: 1px 1px 0 rgba( 0, 0, 0, 0.43 );
-	box-shadow: 0 0 3px transparentize( $color, 0.5 );
+	border: 1px solid darken( $color, 10 );
+	text-shadow: 1px 1px 0 rgba( invert( $text ) , 0.5 );
+	box-shadow: 0 0 2px transparentize( darken( $color , 30 ), 0.25 );
 	transition: all $transition-speed ease-in-out;
 
 	&:hover,
 	&:focus,
 	&:visited:hover {
 		background: $color-hover;
-		color: $text-hover !important;;
+		border: 1px solid darken( $color-hover, 10 );
+		color: $text-hover !important;
+		text-shadow: -1px -1px 0 rgba( invert( $text-hover ) , 0.5 );
+		box-shadow: 0 0 9px transparentize( darken( $color-hover , 10 ), 0.45 );
 	}
 }
 
