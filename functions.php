@@ -33,8 +33,8 @@ if ( is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) ) {
 	// require_once( get_template_directory() . '/assets/functions/acf-helper.php' );
 	// Site options
 	 require_once( get_template_directory() . '/assets/functions/site-options.php' );
-	// ACF blocks (hopefully)
-	require_once( get_template_directory() . '/assets/functions/acf-blocks.php' );
+	// ACF blocks (hopefully soon)
+	// require_once( get_template_directory() . '/assets/functions/acf-blocks.php' );
 }
 
 // Related post function - no need to rely on plugins

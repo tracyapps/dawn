@@ -31,7 +31,8 @@ function start_register_blocks() {
 			'render_template'   => get_template_directory() . '/parts/block-custom_title.php',
 			'category'          => 'sections',
 			'icon'              => 'format-quote',
-			'mode'              => 'edit',
+			'mode'              => 'auto',
+			'align'				=> 'full',
 			'keywords'          => array( 'title', 'fancy' ),
 		));
 		acf_register_block(array(
@@ -39,9 +40,11 @@ function start_register_blocks() {
 			'title'             => __('Hero section'),
 			'description'       => __('a big image with some text over it'),
 			'render_template'   => get_template_directory() . '/parts/block-hero.php',
+			'enqueue_style'     => get_template_directory_uri() . '/css/block_styles.css',
 			'category'          => 'sections',
 			'icon'              => 'id',
-			'mode'              => 'edit',
+			'mode'              => 'auto',
+			'align'				=> 'full',
 			'keywords'          => array( 'grid', 'navigation', 'links' ),
 		));
 		acf_register_block(array(
@@ -52,6 +55,7 @@ function start_register_blocks() {
 			'category'          => 'sections',
 			'icon'              => 'forms',
 			'mode'              => 'preview',
+			'align'				=> 'full',
 			'keywords'          => array( 'text', 'image' ),
 		));
 		acf_register_block(array(
@@ -61,7 +65,8 @@ function start_register_blocks() {
 			'render_template'   => get_template_directory() . '/parts/block-page_grid.php',
 			'category'          => 'sections',
 			'icon'              => 'screenoptions',
-			'mode'              => 'edit',
+			'mode'              => 'auto',
+			'align'				=> 'full',
 			'keywords'          => array( 'grid', 'navigation', 'links' ),
 		));
 	//}
