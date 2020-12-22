@@ -1,16 +1,16 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" itemscope itemtype="http://schema.org/WebPage">
 
-	<header class="article-header">
+	<header class="page-header">
 		<h1 class="page-title"><?php the_title(); ?></h1>
-	</header> <!-- end article header -->
+	</header> <!-- end page header -->
 
-	<section class="entry-content" itemprop="articleBody">
+	<section class="page-content" itemprop="articleBody">
 		<?php the_content(); ?>
 		<?php wp_link_pages(); ?>
 	</section> <!-- end article section -->
 
-	<footer class="article-footer">
+	<footer class="page-footer">
 
-	</footer> <!-- end article footer -->
+	</footer> <!-- end page footer -->
 
 </article> <!-- end article -->
