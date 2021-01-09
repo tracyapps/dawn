@@ -23,7 +23,7 @@
 	<?php } ?>
 
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
+	<?php include( 'assets/css/variables/theme-default.php' ); ?>
 	<?php wp_head(); ?>
 
 
@@ -32,15 +32,20 @@
 <body <?php body_class(); ?>>
 
 <header class="site-header" role="banner">
+	<div class="header-color-bar">
+		<div class="mobile-menu-toggle"><a href="#menu-main-navigation" id="toggle">Menu</a></div>
+	</div>
 	<div class="site-logo">
-		
-		<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
+		<div class="logo-text-container">
+			<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><span><?php echo get_bloginfo( 'name' ); ?></span></a></h1>
+			<div id="site-tagline"><span>replace with tagline</span></div>
+		</div>
 	</div>
 	<div class="main-navigation">
-		<div class="mobile-menu-toggle"><a href="#menu-main-navigation" id="toggle">Menu</a></div>
 		<?php start_top_nav(); ?>
 	</div>
-
-
+	<div class="logomark-container" aria-hidden="true">
+		<?php include( 'parts/dawn-logomark.php' ); ?>
+	</div>
 </header> <!-- / .site-header -->
 <div class="site-content">
