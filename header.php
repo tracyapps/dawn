@@ -40,7 +40,7 @@
 			<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><span><?php echo get_bloginfo( 'name' ); ?></span></a></h1>
 			<div id="site-tagline-container">
 				<span class="before"></span>
-				<div class="site-tagline">replace with tagline</div>
+				<div class="site-tagline"><?php esc_html_e( get_bloginfo( 'description' ) ); ?>></div>
 				<span class="after"></span>
 			</div>
 		</div>
