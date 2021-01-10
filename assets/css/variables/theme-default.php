@@ -25,9 +25,9 @@
 		--nav_opt-style: rounded;
 		--nav_opt-text_size: 1rem;
 		--nav_opt-text_style: uppercase;
-		--nav_opt-background_color: #f44b83
+		--nav_opt-background_color: #f44b83;
 		--nav_opt-text_color: #fff;
-		--nav_opt-hover_background_color: #f44b83
+		--nav_opt-hover_background_color: #483D31;
 		--nav_opt-hover_text_color: #fff;
 
 		--type_opt-body_text_font: 'Open Sans', sans-serif;

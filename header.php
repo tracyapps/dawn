@@ -38,7 +38,11 @@
 	<div class="site-logo">
 		<div class="logo-text-container">
 			<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><span><?php echo get_bloginfo( 'name' ); ?></span></a></h1>
-			<div id="site-tagline"><span>replace with tagline</span></div>
+			<div id="site-tagline-container">
+				<span class="before"></span>
+				<div class="site-tagline">replace with tagline</div>
+				<span class="after"></span>
+			</div>
 		</div>
 	</div>
 	<div class="main-navigation">
@@ -49,3 +53,4 @@
 	</div>
 </header> <!-- / .site-header -->
 <div class="site-content">
+	<div class="blending-div"> </div>

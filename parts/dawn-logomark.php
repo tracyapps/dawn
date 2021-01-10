@@ -12,7 +12,7 @@
 	.leaves_color_primary {fill:var(--logo_color-leaves_color_primary);}
 	.leaves_color_dark_02 {fill:var(--logo_color-leaves_color_dark_02);}
 	.leaves_color_light {fill:var(--logo_color-leaves_color_light);}
-	.leaves_lines_01 {opacity:0.13;fill:var(--logo_color-leaves_lines);enable-background:new    ;}
+	.leaves_lines_01 {opacity:0.13;fill:var(--logo_color-leaves_lines);enable-background:new;}
 	.opacity15 {opacity:0.14;}
 	.leaves_lines {fill:var(--logo_color-leaves_lines);}
 	.opacity25 {opacity:0.26;}
