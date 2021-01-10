@@ -1,16 +1,23 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" itemscope itemtype="http://schema.org/WebPage">
 
-	<header class="page-header">
-		<h1 class="page-title"><?php the_title(); ?></h1>
-	</header> <!-- end page header -->
+	<div class="page-featured-image-container">
+		<?php the_post_thumbnail( 'large' ); ?>
+	</div>
 
-	<section class="page-content" itemprop="articleBody">
-		<?php the_content(); ?>
-		<?php wp_link_pages(); ?>
-	</section> <!-- end article section -->
+	<section class="page-content-container">
+		<header class="page-header">
+			<h1 class="page-title"><?php the_title(); ?></h1>
+		</header> <!-- end page header -->
 
-	<footer class="page-footer">
+		<section class="page-content" itemprop="articleBody">
+			<?php the_content(); ?>
+			<?php wp_link_pages(); ?>
+		</section> <!-- end article section -->
 
-	</footer> <!-- end page footer -->
+		<footer class="page-footer">
+
+		</footer> <!-- end page footer -->
+	</section>
+
 
 </article> <!-- end article -->

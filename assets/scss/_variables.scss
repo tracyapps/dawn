@@ -57,7 +57,7 @@ $default-button-padding:        1.25rem 4rem;
 // ---------------- 02. Grid, layout & breakpoints
 
 // Layout & grid
-$max-page-width: 1150px; // use class "container" around your content for this to work.
+$max-page-width: 1050px; // use class "container" around your content for this to work.
 $page-padding:   15rem; // use class "container" around your content for this to work.
 $mobile-page-padding: 2rem; // smaller padding for the container on mobile
 $gutter-width:   30px;   // used in sections
@@ -101,7 +101,7 @@ $body-font: $sans-serif;
 $accent-font: $handwriting;
 
 // The font size set on the root html element.
-$base-font-size: 23px;
+$base-font-size: 20px;
 
 // The base line height determines the basic unit of vertical rhythm.
 $base-line-height: 1.3;

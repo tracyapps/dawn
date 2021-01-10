@@ -28,35 +28,6 @@
 
 // Style mixins
 
-@mixin button-primary(
-		$color: $button-background-color,
-		$text: $button-text-color,
-		$color-hover: $button-background-color-hover,
-		$text-hover: $button-text-color-hover,
-		$transition-speed: $button-transition-speed,
-		$padding: $default-button-padding ) {
-	background: $color;
-	padding: $padding;
-	text-align: center;
-	text-decoration: none;
-	color: $text !important;
-	border-radius: $border-radius;
-	display: inline-block;
-	border: 1px solid darken( $color, 10 );
-	text-shadow: 1px 1px 0 rgba( invert( $text ) , 0.5 );
-	box-shadow: 0 0 2px transparentize( darken( $color , 30 ), 0.25 );
-	transition: all $transition-speed ease-in-out;
-
-	&:hover,
-	&:focus,
-	&:visited:hover {
-		background: $color-hover;
-		border: 1px solid darken( $color-hover, 10 );
-		color: $text-hover !important;
-		text-shadow: -1px -1px 0 rgba( invert( $text-hover ) , 0.5 );
-		box-shadow: 0 0 9px transparentize( darken( $color-hover , 10 ), 0.45 );
-	}
-}
 
 
 @mixin inverse-colors(
