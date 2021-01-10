@@ -16,9 +16,26 @@ function start_top_nav() {
 		// Remove nav container
 		'menu_class' => 'vertical medium-horizontal menu',
 		// Adding custom nav class
-		'items_wrap' => '<ul id="%1$s" class="%2$s" data-responsive-menu="accordion medium-dropdown" data-close-on-click-inside="false"><li id="menu-home" class="menu-item"><a href="' . esc_url( home_url( '/' ) ) .'"><svg class="icon-home-dims">
+		'items_wrap' => '<ul id="%1$s" class="%2$s"><li id="menu-home" class="menu-item"><a href="' . esc_url( home_url( '/' ) ) .'"><svg class="icon-home-dims">
 							<use xlink:href="#home"></use>
 						</svg></a></li>%3$s</ul>',
+		'theme_location' => 'main-nav',
+		// Where it's located in the theme
+		'depth' => 5,
+		// Limit the depth of the nav
+		'fallback_cb' => false,
+		// Fallback function (see below)
+		'walker' => new Topbar_Menu_Walker()
+	) );
+}
+
+function start_mobile_nav() {
+	wp_nav_menu( array(
+		'container' => false,
+		// Remove nav container
+		'menu_class' => 'vertical medium-horizontal menu',
+		// Adding custom nav class
+		'items_wrap' => '<ul id="menu-main-mobile-navigation-animate" class="%2$s" data-responsive-menu="accordion medium-dropdown" data-close-on-click-inside="false"><li class="menu-item"><a href="' . esc_url( home_url( '/' ) ) .'">Home</a></li>%3$s</ul>',
 		'theme_location' => 'main-nav',
 		// Where it's located in the theme
 		'depth' => 5,

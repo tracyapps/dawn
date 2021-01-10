@@ -33,7 +33,17 @@
 
 <header class="site-header" role="banner">
 	<div class="header-color-bar">
-		<div class="mobile-menu-toggle"><a href="#menu-main-navigation" id="toggle">Menu</a></div>
+		<div class="mobile-menu-toggle">
+			<a href="#" id="toggle">
+				<svg class="icon-navigation-dims">
+					<use xlink:href="#navigation"></use>
+				</svg>
+				Menu
+			</a>
+		</div>
+	</div>
+	<div class="mobile-main-navigation">
+		<?php start_mobile_nav(); ?>
 	</div>
 	<div class="site-logo">
 		<div class="logo-text-container">

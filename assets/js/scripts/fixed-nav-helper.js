@@ -9,9 +9,9 @@ jQuery(document).ready( function($) {
 		var scroll = $(window).scrollTop();
 
 		if (scroll >= 100) {
-			$('header.site-header').addClass('smaller');
+			$('header.site-header').addClass('stick');
 		} else {
-			$('header.site-header').removeClass('smaller');
+			$('header.site-header').removeClass('stick');
 		}
 	});
 

@@ -4,6 +4,7 @@
 
 jQuery(document).ready( function($) {
 	$('#toggle').click( function() {
-		$("#menu-main-navigation").toggleClass("open");
+		//click.preventDefault();
+		$("#menu-main-mobile-navigation-animate").toggleClass("open");
 	});
 });
