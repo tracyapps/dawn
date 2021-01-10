@@ -479,6 +479,10 @@ input[type="submit"] {
           .site-header .main-navigation ul li a:hover {
             background: var(--nav_opt-hover_background_color);
             color: var(--nav_opt-hover_text_color); }
+        .site-header .main-navigation ul li#menu-home svg {
+          fill: var(--nav_opt-text_color);
+          height: 1em;
+          width: 1.5em; }
     @media (max-width: 900px) {
       .site-header .main-navigation .mobile-menu-toggle {
         display: block; }
@@ -965,6 +969,10 @@ span.pulled-left {
 .icon-googleplus-dims {
   width: 32px;
   height: 32px; }
+
+.icon-home-dims {
+  width: 100px;
+  height: 100px; }
 
 .icon-instagram-dims {
   width: 32px;
