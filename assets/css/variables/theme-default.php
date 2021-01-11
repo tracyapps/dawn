@@ -10,21 +10,25 @@
 <style rel="stylesheet" type="text/css">
 	:root {
 		--header_color_bar: #faec75;
+		--text_link_color: #4c8df4;
+		--text_link_hover_color: #9546f4;
+
+		--border_radius: 2em;
+
 		--button_background_color: #f44b83;
 		--button_text_color: #fff;
 		--button_hover_background_color: #b43a5a;
 		--button_hover_text_color: #fff;
-		--secondary_button_background_color: transparent;
-		--secondary_button_text_color: #f44b83;
-		--secondary_button_hover_background_color: #BDD886;
+		--secondary_button_background_color: #BDD886;
+		--secondary_button_text_color: #292929;
+		--secondary_button_hover_background_color: #66CF8D;
 		--secondary_button_hover_text_color: #292929;
-		--text_link_color: #f44b83;
-		--text_link_hover_color: #9546f4;
+
 
 		--accent_lines-header: #f44b83;
 		--accent_lines-separator: #c3a32a;
 
-		--border_radius: 2em;
+
 
 		--nav_opt-style: rounded;
 		--nav_opt-text_size: 1rem;

@@ -24,6 +24,7 @@
 
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php include( 'assets/css/variables/theme-default.php' ); ?>
+	<?php include( 'assets/css/variables/theme-custom.php' ); ?>
 	<?php wp_head(); ?>
 
 
