@@ -22,17 +22,22 @@
 		}
 	}
 
+	@include phone-only {
+		min-height: 110vh;
+		display: block;
+	}
+
 
 	// text position settings
 	&.left-side {
 		text-align: left;
 		justify-content: flex-start;
-		padding-left: 10%;
+		padding-left: 20%;
 	}
 	&.right-side {
 		text-align: right;
 		justify-content: flex-end;
-		padding-right: 10%;
+		padding-right: 25%;
 	}
 	&.align-top {
 		align-items: flex-start;
@@ -46,6 +51,20 @@
 		padding-bottom: 10%;
 	}
 
+	@include phone-only {
+		&.left-side,
+		&.right-side {
+			padding-left:5%;
+			padding-right: 15%;
+		}
+
+		&.align-top,
+		&.align-middle,
+		&.align-bottom {
+			padding-top: 60px;
+			padding-bottom: 2rem;
+		}
+	}
 	// text background overlay
 	&.bg-none {
 
@@ -62,6 +81,23 @@
 			background: rgba( $dark, 0.8 );
 			padding: 4rem;
 			border-radius: var(--border_radius);
+		}
+	}
+
+	@include phone-only {
+		&.bg-none,
+		&.light-background {
+			.homepage_hero_text {
+				background: rgba($white, 0.85);
+				padding: 2rem;
+				margin-bottom: 2rem;
+			}
+		}
+		&.dark-background {
+			.homepage_hero_text {
+				background: rgba($dark, 0.85);
+				padding: 2rem;
+			}
 		}
 	}
 

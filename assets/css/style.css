@@ -610,12 +610,16 @@ input[type="submit"] {
     display: inline-block;
     margin: 0;
     line-height: 1;
-    font-size: 5rem;
+    font-size: 4.5rem;
     position: relative;
     z-index: 9999;
     background: rgba(255, 255, 255, 0.5);
     padding: 3.5rem 2rem 4rem 2rem;
     text-shadow: -1px -2px 0 #aad77a; }
+    @media (max-width: 600px) {
+      .site-logo h1 {
+        font-size: 4rem;
+        display: block; } }
     .site-logo h1 a {
       text-decoration: none;
       color: #292929; }
@@ -652,10 +656,11 @@ input[type="submit"] {
   top: 0;
   right: 0;
   z-index: 999;
-  height: 20vh;
-  width: 20vw;
-  min-width: 300px;
-  max-width: 740px; }
+  height: 420px;
+  width: 34vw;
+  overflow: hidden;
+  min-width: 320px;
+  max-width: 745px; }
   .logomark-container svg {
     height: 420px;
     position: absolute;
@@ -957,16 +962,20 @@ footer.site-footer {
       font-size: 90%; }
       .homepage_hero-container.one-half-height .homepage_hero_text h1 {
         font-size: calc( var(--type_opt-base_font_size) * 2.5); }
+  @media (max-width: 600px) {
+    .homepage_hero-container {
+      min-height: 110vh;
+      display: block; } }
   .homepage_hero-container.left-side {
     text-align: left;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    padding-left: 10%; }
+    padding-left: 20%; }
   .homepage_hero-container.right-side {
     text-align: right;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    padding-right: 10%; }
+    padding-right: 25%; }
   .homepage_hero-container.align-top {
     -ms-flex-align: start;
     align-items: flex-start;
@@ -978,6 +987,13 @@ footer.site-footer {
     -ms-flex-align: end;
     align-items: flex-end;
     padding-bottom: 10%; }
+  @media (max-width: 600px) {
+    .homepage_hero-container.left-side, .homepage_hero-container.right-side {
+      padding-left: 5%;
+      padding-right: 15%; }
+    .homepage_hero-container.align-top, .homepage_hero-container.align-middle, .homepage_hero-container.align-bottom {
+      padding-top: 60px;
+      padding-bottom: 2rem; } }
   .homepage_hero-container.light-background .homepage_hero_text {
     background: rgba(255, 255, 255, 0.8);
     padding: 4rem;
@@ -986,6 +1002,14 @@ footer.site-footer {
     background: rgba(41, 41, 41, 0.8);
     padding: 4rem;
     border-radius: var(--border_radius); }
+  @media (max-width: 600px) {
+    .homepage_hero-container.bg-none .homepage_hero_text, .homepage_hero-container.light-background .homepage_hero_text {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 2rem;
+      margin-bottom: 2rem; }
+    .homepage_hero-container.dark-background .homepage_hero_text {
+      background: rgba(41, 41, 41, 0.85);
+      padding: 2rem; } }
   .homepage_hero-container .homepage_hero_text {
     width: 80%;
     max-width: 480px; }
