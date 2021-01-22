@@ -691,13 +691,13 @@ input[aria-invalid="true"] {
   top: 0;
   right: 0;
   z-index: 999;
-  height: 420px;
-  width: 34vw;
+  height: 390px;
+  width: 32vw;
   overflow: hidden;
   min-width: 320px;
-  max-width: 745px; }
+  max-width: 710px; }
   .logomark-container svg {
-    height: 420px;
+    height: 390px;
     position: absolute;
     left: 0; }
 
