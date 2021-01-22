@@ -461,7 +461,8 @@ input[type="submit"] {
 
 fieldset {
   border: none;
-  padding: 1rem 0; }
+  padding: 1rem 0;
+  margin-bottom: 3rem; }
 
 .frm_description {
   font-size: 80%;
@@ -470,8 +471,17 @@ fieldset {
 
 .frm_form_field.form-field {
   margin-bottom: 2.5rem; }
+  .frm_form_field.form-field input,
+  .frm_form_field.form-field textarea {
+    display: block;
+    width: 100%; }
+  .frm_form_field.form-field input[type="radio"],
+  .frm_form_field.form-field input[type="checkbox"] {
+    width: auto;
+    display: inline-block; }
 
-.frm_error {
+.frm_error,
+.frm_required {
   color: #b11838;
   font-weight: bold; }
 
