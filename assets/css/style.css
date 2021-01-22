@@ -123,7 +123,7 @@ a.button,
 input[type="submit"],
 button {
   background: var(--button_background_color);
-  padding: 0.75rem 1.5rem;
+  padding: 0.5em 1.25em;
   text-align: center;
   text-decoration: none;
   color: var(--button_text_color) !important;
@@ -131,7 +131,12 @@ button {
   transition: all 200ms ease-in-out;
   border-radius: var(--border_radius);
   font-weight: bold;
-  outline: none; }
+  outline: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  border-width: 1px;
+  border-color: transparent;
+  font-size: var(--type_opt-base_font_size); }
   .wp-block-button__link:hover, .wp-block-button__link:focus, .wp-block-button__link:visited:hover,
   .button:hover,
   .button:focus,
@@ -407,14 +412,13 @@ input[type="datetime"],
 input[type="datetime-local"],
 select,
 textarea {
-  padding: 0.5rem 1rem;
+  padding: 0.5em 0.75em;
   outline: none;
   border: 1px solid rgba(41, 41, 41, 0.2);
-  border-radius: 3px;
-  background: #F2F2F2;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.03);
   font-size: 20px;
-  font-family: "Open Sans", sans-serif;
-  margin-left: 1rem;
+  font-family: var(--type_opt-body_text_font);
   box-shadow: none;
   -webkit-appearance: none; }
   input[type="email"]:hover,
@@ -431,7 +435,7 @@ textarea {
   input[type="datetime-local"]:hover,
   select:hover,
   textarea:hover {
-    border: 1px solid #428897; }
+    border: 1px dotted var(--button_background_color); }
   input[type="email"]:focus,
   input[type="number"]:focus,
   input[type="password"]:focus,
@@ -447,12 +451,33 @@ textarea {
   select:focus,
   textarea:focus {
     outline: none;
-    border: 1px dotted #483d31;
-    background: #F2F2F2; }
+    border: 1px solid var(--button_background_color);
+    background: #fff; }
 
 input[type="submit"] {
-  font-size: 20px;
-  font-family: "Open Sans", sans-serif; }
+  font-family: var(--type_opt-body_text_font);
+  font-weight: 600;
+  font-size: var(--type_opt-base_font_size); }
+
+fieldset {
+  border: none;
+  padding: 1rem 0; }
+
+.frm_description {
+  font-size: 80%;
+  opacity: 0.8;
+  margin-bottom: 2rem; }
+
+.frm_form_field.form-field {
+  margin-bottom: 2.5rem; }
+
+.frm_error {
+  color: #b11838;
+  font-weight: bold; }
+
+textarea[aria-invalid="true"],
+input[aria-invalid="true"] {
+  border: 1px solid #b11838; }
 
 .frm_form_field.frm_left_container input:not([type=radio]):not([type=checkbox]), .frm_form_field.frm_left_container:not(.frm_dynamic_select_container) select, .frm_form_field.frm_left_container textarea, .frm_form_field.frm_left_container .wp-editor-wrap, .frm_form_field.frm_left_container .frm_opt_container, .frm_form_field.frm_left_container .frm_dropzone, .frm_form_field.frm_left_container .frm-g-recaptcha, .frm_form_field.frm_left_container .g-recaptcha, .frm_form_field.frm_left_container .chosen-container, .frm_form_field.frm_left_container .frm_combo_inputs_container, .frm_form_field.frm_right_container input:not([type=radio]):not([type=checkbox]), .frm_form_field.frm_right_container:not(.frm_dynamic_select_container) select, .frm_form_field.frm_right_container textarea, .frm_form_field.frm_right_container .wp-editor-wrap, .frm_form_field.frm_right_container .frm_opt_container, .frm_form_field.frm_right_container .frm_dropzone, .frm_form_field.frm_right_container .frm-g-recaptcha, .frm_form_field.frm_right_container .g-recaptcha, .frm_form_field.frm_right_container .chosen-container, .frm_form_field.frm_right_container .frm_combo_inputs_container {
   max-width: 100%; }

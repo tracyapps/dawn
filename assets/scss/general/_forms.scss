@@ -15,33 +15,55 @@ input[type="datetime"],
 input[type="datetime-local"],
 select,
 textarea {
-	padding: 0.5rem 1rem;
+	padding: 0.5em 0.75em;
 	outline: none;
 	border: 1px solid rgba( $default-text-color, 0.2 );
-	border-radius: 3px;
-	background: $default-background-color;
+	border-radius: 4px;
+	background: rgba( 0, 0, 0, 0.03 );
 	font-size: $base-font-size;
-	font-family: $sans-serif;
-	margin-left: 1rem;
+	font-family: var(--type_opt-body_text_font);
 	box-shadow: none;
 	-webkit-appearance: none;
 
 	&:hover {
-		border: 1px solid $primary-color;
+		border: 1px dotted var(--button_background_color);
 	}
 
 	&:focus {
 		outline: none;
-		border: 1px dotted $secondary-color;
-		background: $default-background-color;
+		border: 1px solid var(--button_background_color);
+		background: $white;
 	}
 }
 
 input[type="submit"] {
-	font-size: $base-font-size;
-	font-family: $sans-serif;
+	font-family: var(--type_opt-body_text_font);
+	font-weight: 600;
+	font-size: var(--type_opt-base_font_size);
 }
 
+fieldset {
+	border: none;
+	padding: 1rem 0;
+}
+
+.frm_description {
+	font-size: 80%;
+	opacity: 0.8;
+	margin-bottom: 2rem;
+}
+.frm_form_field.form-field {
+	margin-bottom: 2.5rem;
+}
+
+.frm_error {
+	color: $input-error-color;
+	font-weight: bold;
+}
+textarea[aria-invalid="true"],
+input[aria-invalid="true"] {
+	border: 1px solid $input-error-color;
+}
 
 // fixing some formidble pro stuff that they sneak in even when styles are off
 .frm_form_field.frm_left_container input:not([type=radio]):not([type=checkbox]), .frm_form_field.frm_left_container:not(.frm_dynamic_select_container) select, .frm_form_field.frm_left_container textarea, .frm_form_field.frm_left_container .wp-editor-wrap, .frm_form_field.frm_left_container .frm_opt_container, .frm_form_field.frm_left_container .frm_dropzone, .frm_form_field.frm_left_container .frm-g-recaptcha, .frm_form_field.frm_left_container .g-recaptcha, .frm_form_field.frm_left_container .chosen-container, .frm_form_field.frm_left_container .frm_combo_inputs_container, .frm_form_field.frm_right_container input:not([type=radio]):not([type=checkbox]), .frm_form_field.frm_right_container:not(.frm_dynamic_select_container) select, .frm_form_field.frm_right_container textarea, .frm_form_field.frm_right_container .wp-editor-wrap, .frm_form_field.frm_right_container .frm_opt_container, .frm_form_field.frm_right_container .frm_dropzone, .frm_form_field.frm_right_container .frm-g-recaptcha, .frm_form_field.frm_right_container .g-recaptcha, .frm_form_field.frm_right_container .chosen-container, .frm_form_field.frm_right_container .frm_combo_inputs_container {
@@ -51,3 +73,4 @@ input[type="submit"] {
 .frm_form_field.frm_left_container label.frm_primary_label {
 	max-width: 90%;
 }
+
