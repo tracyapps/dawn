@@ -318,7 +318,7 @@ h6 {
 .container {
   width: 90%;
   margin: 0 auto;
-  max-width: 1050px; }
+  max-width: 950px; }
 
 @media (min-width: 900px) {
   .row {
@@ -692,7 +692,7 @@ input[aria-invalid="true"] {
   right: 0;
   z-index: 999;
   height: 390px;
-  width: 32vw;
+  width: 28vw;
   overflow: hidden;
   min-width: 320px;
   max-width: 710px; }
@@ -723,7 +723,7 @@ input[aria-invalid="true"] {
     position: relative;
     z-index: 9999;
     width: 90%;
-    max-width: 1050px;
+    max-width: 950px;
     margin: 0 auto; }
   .site-content .page-featured-image-container {
     width: 100%;
