@@ -801,6 +801,9 @@ footer.site-footer {
   footer.site-footer .container p {
     padding: 0; }
 
+.wp-block-group.has-background {
+  padding: 3rem; }
+
 /**
  * Block: image_text_row
  */

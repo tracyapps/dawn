@@ -30,6 +30,9 @@
   100% {
     opacity: 0; } }
 
+.wp-block-group.has-background {
+  padding: 3rem; }
+
 /**
  * Block: image_text_row
  */

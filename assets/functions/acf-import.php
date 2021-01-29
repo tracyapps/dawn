@@ -788,7 +788,7 @@ acf_add_local_field_group(array (
 							'label' => 'Birdcage color',
 							'name' => 'birdcage_color',
 							'type' => 'color_picker',
-							'instructions' => '',
+							'instructions' => 'default: #C3A32A',
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array(
@@ -803,7 +803,7 @@ acf_add_local_field_group(array (
 							'label' => 'Branch color',
 							'name' => 'branch_color',
 							'type' => 'color_picker',
-							'instructions' => '',
+							'instructions' => 'default: #483D31',
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array(
@@ -818,7 +818,7 @@ acf_add_local_field_group(array (
 							'label' => 'Bird color, main',
 							'name' => 'bird_color_main',
 							'type' => 'color_picker',
-							'instructions' => '',
+							'instructions' => 'default: #F44B83',
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array(
@@ -833,7 +833,7 @@ acf_add_local_field_group(array (
 							'label' => 'Bird color, secondary',
 							'name' => 'bird_color_secondary',
 							'type' => 'color_picker',
-							'instructions' => '',
+							'instructions' => 'default: #FA7EA0',
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array(
@@ -848,7 +848,7 @@ acf_add_local_field_group(array (
 							'label' => 'Leaves color, main',
 							'name' => 'leaves_color_primary',
 							'type' => 'color_picker',
-							'instructions' => '',
+							'instructions' => 'default: #66CF8D',
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array(
@@ -863,7 +863,7 @@ acf_add_local_field_group(array (
 							'label' => 'Leaves color, darkest',
 							'name' => 'leaves_color_dark_01',
 							'type' => 'color_picker',
-							'instructions' => '',
+							'instructions' => 'default: #336947',
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array(
@@ -878,7 +878,7 @@ acf_add_local_field_group(array (
 							'label' => 'Leaves color, dark',
 							'name' => 'leaves_color_dark_02',
 							'type' => 'color_picker',
-							'instructions' => '',
+							'instructions' => 'default: #468F61',
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array(
@@ -893,7 +893,7 @@ acf_add_local_field_group(array (
 							'label' => 'Leaves color, light',
 							'name' => 'leaves_color_light',
 							'type' => 'color_picker',
-							'instructions' => '',
+							'instructions' => 'default: #BDD886',
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array(
@@ -908,7 +908,7 @@ acf_add_local_field_group(array (
 							'label' => 'Leaves color, accent lines',
 							'name' => 'leaves_lines',
 							'type' => 'color_picker',
-							'instructions' => '',
+							'instructions' => 'default: #683FA9',
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array(
@@ -923,7 +923,7 @@ acf_add_local_field_group(array (
 							'label' => 'Flower color, main',
 							'name' => 'flower_color_main',
 							'type' => 'color_picker',
-							'instructions' => '',
+							'instructions' => 'default: #DD97C1',
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array(
@@ -938,7 +938,7 @@ acf_add_local_field_group(array (
 							'label' => 'Flower color, darker',
 							'name' => 'flower_color_main_darker',
 							'type' => 'color_picker',
-							'instructions' => '',
+							'instructions' => 'default: #C176AB',
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array(
@@ -953,7 +953,7 @@ acf_add_local_field_group(array (
 							'label' => 'Flower color, light',
 							'name' => 'flower_color_light',
 							'type' => 'color_picker',
-							'instructions' => '',
+							'instructions' => 'default: #F7B5D0',
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array(
@@ -968,7 +968,7 @@ acf_add_local_field_group(array (
 							'label' => 'Flower color, lightest',
 							'name' => 'flower_color_lightest',
 							'type' => 'color_picker',
-							'instructions' => '',
+							'instructions' => 'default: #FDF2F3',
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array(
@@ -983,7 +983,7 @@ acf_add_local_field_group(array (
 							'label' => 'Flower color, center color',
 							'name' => 'flower_color_center_color',
 							'type' => 'color_picker',
-							'instructions' => '',
+							'instructions' => 'default: #683FA9',
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array(
