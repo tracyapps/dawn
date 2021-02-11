@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+
 <svg version="1.1" id="logomark-4web" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" viewBox="0 0 624.9 343.5" style="enable-background:new 0 0 624.9 343.5;" xml:space="preserve">
 <style type="text/css">

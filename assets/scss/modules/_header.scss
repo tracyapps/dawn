@@ -192,7 +192,7 @@
 		text-shadow: -1px -2px 0 #aad77a;
 
 		@include phone-only {
-			font-size: 4rem;
+			font-size: 3.2rem;
 			display: block;
 		}
 
@@ -246,9 +246,18 @@
 	min-width: 320px;
 	max-width: 710px;
 
+	@include phone-only {
+		height: 300px;
+		min-width: 230px;
+	}
+
 	svg {
 		height:390px;
 		position: absolute;
 		left: 0;
+
+		@include phone-only {
+			height: 300px;
+		}
 	}
 }

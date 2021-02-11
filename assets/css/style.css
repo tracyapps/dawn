@@ -260,42 +260,42 @@ h6 {
   font-family: var(--type_opt-header_text_font); }
 
 h1 {
-  font-size: calc( var(--type_opt-base_font_size) * 3.3);
+  font-size: calc( var(--type_opt-base_font_size) * 3.1);
   line-height: 1; }
   @media (max-width: 600px) {
     h1 {
-      font-size: calc( var(--type_opt-base_font_size) * 3); } }
+      font-size: calc( var(--type_opt-base_font_size) * 2.1); } }
 
 h2 {
-  font-size: calc( var(--type_opt-base_font_size) * 3.1);
+  font-size: calc( var(--type_opt-base_font_size) * 3);
   font-weight: 300; }
   @media (max-width: 600px) {
     h2 {
-      font-size: calc( var(--type_opt-base_font_size) * 2.9); } }
+      font-size: calc( var(--type_opt-base_font_size) * 2); } }
 
 h3 {
-  font-size: calc( var(--type_opt-base_font_size) * 3); }
+  font-size: calc( var(--type_opt-base_font_size) * 2.6); }
   @media (max-width: 600px) {
     h3 {
-      font-size: calc( var(--type_opt-base_font_size) * 2.7); } }
+      font-size: calc( var(--type_opt-base_font_size) * 1.8); } }
 
 h4 {
   font-size: calc( var(--type_opt-base_font_size) * 2.5); }
   @media (max-width: 600px) {
     h4 {
-      font-size: calc( var(--type_opt-base_font_size) * 2.3); } }
+      font-size: calc( var(--type_opt-base_font_size) * 1.5); } }
 
 h5 {
   font-size: calc( var(--type_opt-base_font_size) * 2); }
   @media (max-width: 600px) {
     h5 {
-      font-size: calc( var(--type_opt-base_font_size) * 1.8); } }
+      font-size: calc( var(--type_opt-base_font_size) * 1.2); } }
 
 h6 {
   font-size: calc( var(--type_opt-base_font_size) * 1.5); }
   @media (max-width: 600px) {
     h6 {
-      font-size: calc( var(--type_opt-base_font_size) * 1.4); } }
+      font-size: calc( var(--type_opt-base_font_size) * 1.1); } }
 
 .plain-bg {
   background: #F2F2F2;
@@ -653,7 +653,7 @@ input[aria-invalid="true"] {
     text-shadow: -1px -2px 0 #aad77a; }
     @media (max-width: 600px) {
       .site-logo h1 {
-        font-size: 4rem;
+        font-size: 3.2rem;
         display: block; } }
     .site-logo h1 a {
       text-decoration: none;
@@ -696,10 +696,17 @@ input[aria-invalid="true"] {
   overflow: hidden;
   min-width: 320px;
   max-width: 710px; }
+  @media (max-width: 600px) {
+    .logomark-container {
+      height: 300px;
+      min-width: 230px; } }
   .logomark-container svg {
     height: 390px;
     position: absolute;
     left: 0; }
+    @media (max-width: 600px) {
+      .logomark-container svg {
+        height: 300px; } }
 
 #main {
   width: 100%; }

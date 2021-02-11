@@ -217,28 +217,28 @@ h6 {
 
 h1 {
 
-	font-size: calc( var(--type_opt-base_font_size) * 3.3 );
+	font-size: calc( var(--type_opt-base_font_size) * 3.1 );
 	line-height: 1;
 
 	@include phone-only {
-		font-size: calc( var(--type_opt-base_font_size) * 3 );
+		font-size: calc( var(--type_opt-base_font_size) * 2.1 );
 	}
 }
 
 h2 {
-	font-size: calc( var(--type_opt-base_font_size) * 3.1 );
+	font-size: calc( var(--type_opt-base_font_size) * 3 );
 	font-weight: 300;
 
 	@include phone-only {
-		font-size: calc( var(--type_opt-base_font_size) * 2.9 );
+		font-size: calc( var(--type_opt-base_font_size) * 2 );
 	}
 }
 
 h3 {
-	font-size: calc( var(--type_opt-base_font_size) * 3 );
+	font-size: calc( var(--type_opt-base_font_size) * 2.6 );
 
 	@include phone-only {
-		font-size: calc( var(--type_opt-base_font_size) * 2.7 );
+		font-size: calc( var(--type_opt-base_font_size) * 1.8 );
 	}
 }
 
@@ -246,7 +246,7 @@ h4 {
 	font-size: calc( var(--type_opt-base_font_size) * 2.5 );
 
 	@include phone-only {
-		font-size: calc( var(--type_opt-base_font_size) * 2.3 );
+		font-size: calc( var(--type_opt-base_font_size) * 1.5 );
 	}
 }
 
@@ -254,7 +254,7 @@ h5 {
 	font-size: calc( var(--type_opt-base_font_size) * 2 );
 
 	@include phone-only {
-		font-size: calc( var(--type_opt-base_font_size) * 1.8 );
+		font-size: calc( var(--type_opt-base_font_size) * 1.2 );
 	}
 }
 
@@ -262,7 +262,7 @@ h6 {
 	font-size: calc( var(--type_opt-base_font_size) * 1.5 );
 
 	@include phone-only {
-		font-size: calc( var(--type_opt-base_font_size) * 1.4 );
+		font-size: calc( var(--type_opt-base_font_size) * 1.1 );
 	}
 }
 
